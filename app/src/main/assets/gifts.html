@@ -1,0 +1,33 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista prezentów</title>
+</head>
+<body>
+<div class="root">
+    <center>
+    <header>
+        <h2>Lista życzeń</h2>
+        <output type="text" id="wishlist"/><br>
+    </header>
+    <main>
+    </main>
+    <footer class="button-container">
+        <button onclick="handleAddToWishList()">Dodaj prezent</button><br><br>
+        <button onclick="handleCardGeneration()">Wygeneruj kartkę</button><br><br>
+    </footer>
+    </center>
+</div>
+<script type="text/javascript">
+       function handleAddToWishList() {
+        giftsactivity.addGift(giftsactivity.this);
+        while(giftsactivity.getTalking()===1){}
+        document.getElementById("wishlist").value=giftsactivity.getGiftList();
+    }
+
+    function handleCardGeneration() {
+        giftsactivity.generateCard(giftsactivity.this);
+    }
+</script>
+</body>
+</html>

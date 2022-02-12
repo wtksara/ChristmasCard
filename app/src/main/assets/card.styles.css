@@ -1,0 +1,21 @@
+body {
+    background-image: url("kartka.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#wishlist {
+  display: block;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.containerlist {
+  position: absolute;
+  left: 160px;
+  top: 100px;
+  width: 200px;
+  height: 180px;
+  overflow-y: scroll;
+}
